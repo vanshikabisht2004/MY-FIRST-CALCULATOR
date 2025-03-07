@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #4facfe, #00f2fe); /* Blue Gradient */
+}
+
+.calculator {
+    width: 350px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.display {
+    width: 100%;
+    height: 50px;
+    font-size: 30px;
+    text-align: right;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 20px;
+    font-size: 20px;
+    background-color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.btn:active {
+    background-color: #ccc;
+}
+
+.btn:nth-child(1),
+.btn:nth-child(2),
+.btn:nth-child(3),
+.btn:nth-child(4) {
+    background-color: #4facfe; /* Light blue */
+}
+
+.btn:nth-child(5),
+.btn:nth-child(6),
+.btn:nth-child(7),
+.btn:nth-child(8) {
+    background-color: #1e90ff; /* Bright blue */
+}
+
+.btn:nth-child(9),
+.btn:nth-child(10),
+.btn:nth-child(11),
+.btn:nth-child(12) {
+    background-color: #4682b4; /* Steel blue */
+}
+
+.btn:nth-child(13),
+.btn:nth-child(14),
+.btn:nth-child(15),
+.btn:nth-child(16) {
+    background-color: #5f9ea0; /* Cadet blue */
+}
+
+.btn:nth-child(17) {
+    background-color: #00f2fe; /* Light cyan for equals button */
+}
+
+.btn:nth-child(18),
+.btn:nth-child(19),
+.btn:nth-child(20),
+.btn:nth-child(21),
+.btn:nth-child(22),
+.btn:nth-child(23),
+.btn:nth-child(24) {
+    background-color: #87ceeb; /* Sky blue for scientific buttons */
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
